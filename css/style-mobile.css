@@ -22,8 +22,8 @@
 	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-300px,0,0); -webkit-transform: translate3d(-300px,0,0); -o-transform: translate3d(-300px,0,0); -ms-transform: translate3d(-300px,0,0); transform: translate3d(-300px,0,0); } }
 
 	#bg {
-		background-size: 6250px auto;
-		width: 12343px;
+		background-size: 2000px auto;
+		width: 2000px;
 	}
 
 /* Header */

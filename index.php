@@ -22,30 +22,21 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', 1);
  ?>
-<!-- php includes -->
-<?php require('inc/riot-api.php'); ?>
-<?php include('inc/sum-search.php'); ?>
 <body class="loading">
 <div id="wrapper">
 	<div id="bg"></div>
 	<div id="overlay"></div>
 	<div id="main">
 		<header id="header">
-			<h1>&mdash; The League &mdash;</h1>
+			<a href="/"><h1>The<br>League</h1></a>
 			<br>
-			<form method="post">
-			<input type="text" name="search" />
-			<button type="submit">Search</button>
+			<form method="post" action="searched.php">
+			<input class="search" type="text" name="search" placeholder="Summoner Name"/>
+			<button class="btn-search" type="submit">Summon!</button>
 			</form>
-			<p>
-				Summoner Name: <?php echo $summoner_name; ?><br>
-				Summoner ID: <?php echo $summoner_id; ?><br>
-				Summoner Level: <?php echo $summoner_level; ?><br>
-				Summner Icon: <?php echo $summoner_icon; ?><br><br><br>
-			</p>
 		</header>
 		<footer id="footer">
-			<span class="copyright">owned by kyle littlestar, all rights reserved.</span>
+			<span class="copyright">Created by Kyle &starf;, enjoy. :)</span>
 		</footer>
 	</div>
 </div>

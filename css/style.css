@@ -6,6 +6,157 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
+.team1 {
+	float: left;
+	margin-right: 1em;
+}
+
+.team2 {
+	float: left;
+
+}
+
+.teams {
+	width: 50%;
+	float: left;
+}
+
+.recent-matches {
+	margin-top: 2em;
+}
+
+.champ-portrait {
+	width: 120px;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.items-bought {
+	float: left;
+	position: relative;
+	width: 30%;
+}
+
+.items li {
+	float: left;
+	margin-left: 1em;
+}
+
+.items {
+	width: 100%;
+	float: left;
+}
+
+.sm-txt {
+	font-size: .5em;
+}
+
+.champ-lv {
+	position: relative;
+	margin-top: -2em;
+	margin-left: .5em;
+	font-size: 1.5em;
+	background: rgba(0,0,0,0.55);
+	width: 55px;
+	text-align: center;
+	border-radius: 15px;
+
+}
+
+.match-stats {
+	clear: both;
+	margin-bottom: 2em;
+	height: 7.5em;
+}
+
+.gameType {
+	float: left;
+	margin-left: 1em;
+}
+
+.gameTime {
+	float: right;
+	margin-right: 1em;
+
+}
+
+.top-bar-info {
+	background: rgba(0, 57, 83, 0.8);
+	width: 100%;
+	height: 1.8em;
+	clear: both;
+
+}
+
+.top-bar-info p {
+
+}
+
+@font-face {
+	font-family: Friz;
+	src: url("../fonts/Friz.ttf");
+}
+
+.smn-info {
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 2em;	
+}
+
+.smn-name {
+	font-size: 2em;
+	font-family: friz;
+	text-transform: uppercase;
+}
+
+.logo {
+	font-size: 2em;
+	position: relative;
+	font-family: friz;
+	text-align: center;
+	width: 6em;
+	float: left;
+	top: .3em;
+}
+
+.logo h1 {
+	text-transform: uppercase;
+}
+
+.dat-search {
+	position: relative;
+	display: inline-block;
+	float: right;
+	width: auto;
+	right: 4em;
+	top: 1.5em;
+}
+
+.search {
+	width: 15em;
+	border: 0;
+	height: 2.25em;
+	border-radius: 3px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 0.5em;
+}
+
+.search:focus {
+	outline: none;
+}
+
+.btn-search {
+	font-size: 1em;
+	padding: 0.5em 1em 0.5em 1em;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #41BAD8;
+	border: 0;
+
+}
+
 /* Basic */
 
 	body, input, select, textarea {
@@ -20,7 +171,7 @@
 
 	body {
 		background: white;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 
 		body.loading * {
@@ -82,7 +233,7 @@
 		height: 100%;
 		left: 0;
 		opacity: 0;
-		position: fixed;
+		/*position: fixed;*/
 		top: 0;
 		width: 100%;
 	}
@@ -106,7 +257,7 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 		/* Set your background with this */
-		background: #000 url("images/bg.jpg") bottom left;
+		background: #000 url("images/bg.jpg") top left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -161,6 +312,14 @@
 		top: 0;
 		width: 100%;
 	}
+	#main2 {
+		height: 100%;
+		position: relative;
+		width: 100%;
+		display: inline-block;
+		background: rgba(14, 31, 39, 0.95);
+		margin-top: 2em;
+	}
 
 		#main:before {
 			content: '';
@@ -212,8 +371,10 @@
 		#header h1 {
 			font-size: 4.35em;
 			font-weight: 400;
-			letter-spacing: -0.035em;
-			line-height: 1em;
+			letter-spacing: 0em;
+			line-height: 0.82em;
+			font-family: 'Friz';
+			text-transform: uppercase;
 		}
 
 		#header p {
