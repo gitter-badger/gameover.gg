@@ -85,30 +85,12 @@
 								<div class="teams">
 									<div class="team1">
 										<ul>
-											<?php foreach ($game['fellowPlayers'] as $team => $blue):?>
-												<?php if ($blue['teamId'] < 200):
-													$sumInfo = array_shift($riot->getSummoner($blue['summonerId']));
-													$sumName = $sumInfo['name'];
-												?>
-													<li>
-													<?php echo $sumName; ?>
-													</li>
-												<?php endif; ?>
-											<?php endforeach; ?>
+										
 										</ul>
 									</div>
 									<div class="team2">
 										<ul>
-											<?php foreach ($game['fellowPlayers'] as $team => $red):?>
-												<?php if ($red['teamId'] > 100): 
-													$sumInfo = array_shift($riot->getSummoner($red['summonerId']));
-													$sumName = $sumInfo['name'];
-												?>
-													<li>
-														<?php echo $sumName; ?>
-													</li>
-												<?php endif; ?>
-											<?php endforeach; ?>
+										
 										</ul>
 									</div>
 								</div>
